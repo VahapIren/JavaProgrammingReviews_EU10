@@ -2,6 +2,11 @@ package week13_12_03_2022.encapsulation;
 
 public class Encapsulation {
 
-    //hiding data. how we implement it.
-    //private access modifier and getter-setter methods
+
+    /*
+    Encapsulation is a data hiding. How we can implement it?
+    private access modifiers with variables and public getter and setter
+    setter method for modify object, getter is for reaading object datas
+     */
+
 }
