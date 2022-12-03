@@ -7,7 +7,7 @@ public class Instagram extends MobileApp {
         super("Instagram", version);
     }
     public void postPhoto(){
-
+        System.out.println("The user is posting photo");
     }
 
 
