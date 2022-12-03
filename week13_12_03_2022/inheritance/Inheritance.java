@@ -4,4 +4,5 @@ public class Inheritance {
     /*
     relationship between classes
      */
+
 }
