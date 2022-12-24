@@ -7,34 +7,53 @@ public class RunTimeExceptionsExamples {
     public static void main(String[] args) {
  //Arithmetic Exceptions
 
-        for (int i = 5; i >=1 ; i--) {
-            System.out.println(60/i); //java.lang.ArithmeticException
+        try {
+            for (int i = 5; i >=0 ; i--) {
+                System.out.println(60/i); //java.lang.ArithmeticException
+            }
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+            //  e.printStackTrace();
         }
- //NullPointerException
+        //NullPointerException
 
-        //System.out.println(employee.salary()); //java.lang.NullPointerException
-                                                //if you want to reach object fields oe methods you have to initialize it
+        try {
+            System.out.println(employee.salary()); //java.lang.NullPointerException
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //if you want to reach object fields oe methods you have to initialize it
 
  //NumberFormatException
         String str="Adam 123.";
-        //String s=str.substring(str.indexOf(" ")+1);
-        //System.out.println(Integer.parseInt(s));
+        String s=str.substring(str.indexOf(" ")+1);
+        try {
+            System.out.println(Integer.parseInt(s));
+        } catch (NumberFormatException e) {
+            System.out.println(e.getMessage());
+        }
 
 //ArrayIndexOutOfException
 
         int[] array={1,2,3,4};
-        //System.out.println(array[3]); //java.lang.ArrayIndexOutOfBoundsException
+        try {
+            System.out.println(array[6]); //java.lang.ArrayIndexOutOfBoundsException
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 //StringIndexOutOfException
 
         //StringIndexOutOfBoundsException
         String name="Adam";
 
-        //  System.out.println(name.charAt(4)); //java.lang.StringIndexOutOfBoundsException: String index out of range: 4
+        try {
+            //TODO I will find the solution later lets skip it
 
-
-
-
+            System.out.println(name.charAt(4)); //java.lang.StringIndexOutOfBoundsException: String index out of range: 4
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
     }
