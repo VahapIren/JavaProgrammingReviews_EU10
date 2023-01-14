@@ -6,12 +6,9 @@ public class CompileTimeExceptionExamples {
         waitFor(3);
         System.out.println("Ersin");
 
-
-
-
     }
 
-    private static void waitFor(int i) {
+    public static void waitFor(int i) {
         try {
             Thread.sleep(i*1000);
         } catch (InterruptedException e) {
